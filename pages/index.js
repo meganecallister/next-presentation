@@ -5,12 +5,13 @@ import axios from 'axios';
 export default class Home extends Component {
     static async getInitialProps({req}) {
         let dogs = await axios.get('https://dog.ceo/api/breeds/image/random')
-        console.log(dogs.data)
+
+        return {dogPics: dogs.data.message}
     }
 
 
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
         this.state = {
             dogs: ''
         }
@@ -21,7 +22,7 @@ export default class Home extends Component {
         return (
             <div>
                 Welcome Bruh!
-                <img src={this.props.dogs}/>
+                <img src={this.props.dogPics}/>
             </div>
         )
     }

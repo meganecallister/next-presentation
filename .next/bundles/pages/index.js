@@ -1682,8 +1682,7 @@ var Home = function (_Component) {
 
                             case 2:
                                 dogs = _context.sent;
-
-                                console.log(dogs.data);
+                                return _context.abrupt('return', { dogPics: dogs.data.message });
 
                             case 4:
                             case 'end':
@@ -1701,10 +1700,10 @@ var Home = function (_Component) {
         }()
     }]);
 
-    function Home() {
+    function Home(props) {
         _classCallCheck(this, Home);
 
-        var _this = _possibleConstructorReturn(this, (Home.__proto__ || Object.getPrototypeOf(Home)).call(this));
+        var _this = _possibleConstructorReturn(this, (Home.__proto__ || Object.getPrototypeOf(Home)).call(this, props));
 
         _this.state = {
             dogs: ''
@@ -1720,13 +1719,13 @@ var Home = function (_Component) {
                 {
                     __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 22
+                        lineNumber: 23
                     }
                 },
                 'Welcome Bruh!',
-                __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement('img', { src: this.props.dogs, __source: {
+                __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement('img', { src: this.props.dogPics, __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 24
+                        lineNumber: 25
                     }
                 })
             );
