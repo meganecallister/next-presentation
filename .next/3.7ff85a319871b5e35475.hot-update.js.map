@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./pages/index.js?f7ee"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;eAGe;AAAA,SAAM;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,GAAN;AAAA,C;;AAAf","file":"3.7ff85a319871b5e35475.hot-update.js","sourcesContent":["\r\n\r\n\r\nexport default () => <div>Welcome Bruh!</div>\n\n\n// WEBPACK FOOTER //\n// ./pages/index.js"],"sourceRoot":""}
